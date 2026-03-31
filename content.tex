@@ -1,0 +1,586 @@
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+\section{Texto y estructura}
+
+\subsection{Párrafos de texto}\index{Párrafos de texto}
+
+\lipsum[1-1] % Dummy text
+
+%------------------------------------------------
+\subsection{Estilo de texto}
+\textbf{Negritas}, \textit{Cursiva}, \underline{Subrayado}, \texttt{Monoespaciado}, \emph{Énfasis}
+
+
+
+%------------------------------------------------
+\subsubsection{Citas}
+Esta es una cita en línea: \enquote{Esto está citado.}, \quotes{comillas}
+
+\begin{quote}
+	Esta es una cita en bloque. Se utiliza frecuentemente para pasajes largos, entrevistas o texto destacado.
+\end{quote}
+
+%------------------------------------------------
+\subsection{Notas al pie}
+Las notas al pie son útiles para añadir aclaraciones, referencias adicionales o comentarios breves sin interrumpir el flujo principal del texto.\footnote{Las notas al pie deben utilizarse con moderación en la escritura académica y no deben contener información esencial.}
+
+%------------------------------------------------
+\subsection{Hipervínculos}\index{hipervínculos}
+Los hipervínculos se utilizan para hacer referencia a documentación en línea, conjuntos de datos, repositorios de software o estándares oficiales. Siempre que sea posible, los enlaces deben integrarse en texto descriptivo en lugar de mostrarse como URL sin formato.
+
+\subsubsection{Ejemplo general}
+La documentación completa y los tutoriales están disponibles en el sitio web oficial del proyecto \LaTeX\ (\href{https://www.latex-project.org}{Sitio web del proyecto LaTeX}). En los casos en que la dirección en sí sea relevante, se puede mostrar la URL completa de forma explícita:
+\url{https://ctan.org}
+
+
+\subsubsection{Ejemplo de documentación técnica}
+Seguimos los pasos de instalación proporcionados en\awesomefootnote{https://www.latex-project.org/get/}, seleccionando una distribución mínima de \LaTeX{} en lugar de una instalación completa.
+
+
+
+
+
+%------------------------------------------------
+\subsection{Listas}\index{listas}
+
+\subsubsection{Lista numerada}\index{listas!lista numerada}
+
+Las listas numeradas son útiles cuando el orden de los elementos es importante o cuando se describen procedimientos paso a paso.
+
+\begin{enumerate}
+	\item El primer elemento
+	\item El segundo elemento
+	\begin{enumerate}
+		\item Subelemento uno
+		\item Subelemento dos
+		\begin{enumerate}
+			\item Sub-subelemento A
+			\item Sub-subelemento B
+		\end{enumerate}
+	\end{enumerate}
+	\item El tercer elemento
+\end{enumerate}
+
+
+\subsubsection{Lista con viñetas}\index{listas!lista con viñetas}
+
+Las listas con viñetas son apropiadas para elementos no ordenados donde la secuencia no es importante.
+
+\begin{itemize}
+	\item El primer elemento
+	\item El segundo elemento
+	\begin{itemize}
+		\item Subelemento uno
+		\item Subelemento dos
+		\begin{itemize}
+			\item Sub-subelemento A
+			\item Sub-subelemento B
+		\end{itemize}
+	\end{itemize}
+	\item El tercer elemento
+\end{itemize}
+
+
+
+\subsubsection{Listas con Font Awesome}\index{listas!font awesome}
+Se pueden utilizar símbolos personalizados, como los iconos de Font Awesome, para distinguir visualmente los elementos de una lista o resaltar categorías específicas.
+
+\begin{itemize}
+	\item[\footnotesize\faRobot] El primer elemento
+	\item[\footnotesize\faRobot] El segundo elemento
+	\begin{itemize}
+		\item[\footnotesize\faMicrochip] Subelemento uno
+		\item[\footnotesize\faMicrochip] Subelemento dos
+	\end{itemize}
+	\item[\footnotesize\faRobot] El tercer elemento
+\end{itemize}
+
+
+\subsubsection{Descripciones y definiciones}\index{listas!descripciones y definiciones}
+Las listas de descripción se utilizan para asociar términos o etiquetas con breves explicaciones o definiciones.
+
+\begin{description}
+	\item[Nombre] Descripción
+	\item[Palabra] Definición
+	\item[Comentario] Explicación
+\end{description}
+
+%------------------------------------------------
+\subsection{Citas}\index{citas}
+
+\begin{itemize}
+	\item Artículos: \cite{Sonneveldt2007}, \cite{Snell1992}, \cite{Bugajski1992}.
+	\item Libros: \cite{Etkin1996}, \cite{Stevens2016}, \cite{Isidori1995}, \cite{Stengel2004}.
+	\item Tesis: \cite{Harkegard2001}, \cite{Harkegard2003}.
+	\item Sitios web: \cite{Github2026}
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%	SECTION 2
+%----------------------------------------------------------------------------------------
+\section{Ecuaciones y símbolos}
+
+%------------------------------------------------
+\subsection{Matemáticas en línea}
+El teorema de Pitágoras se expresa como $a^2 + b^2 = c^2$.
+
+%------------------------------------------------
+\subsection{Ecuaciones en bloque}
+
+\begin{equation}
+	E = mc^2
+\end{equation}
+
+%------------------------------------------------
+\subsection{Entorno align}
+
+\begin{align}
+	f(x) &= x^2 + 3x + 2 \\
+	&= (x+1)(x+2)
+\end{align}
+
+%------------------------------------------------
+\subsection{Fracciones, raíces y exponentes}
+
+\[
+\frac{a + b}{c}, \quad \sqrt{2}, \quad x^{n+1}
+\]
+
+%------------------------------------------------
+\subsection{Sumatorias e integrales}
+
+\[
+\sum_{i=1}^{n} i = \frac{n(n+1)}{2}, \quad \int_0^1 x^2\,dx = \frac{1}{3}
+\]
+
+%------------------------------------------------
+\subsection{Símbolos griegos}
+
+\subsubsection{Letras griegas minúsculas}
+
+\[
+\alpha, \ \beta, \ \gamma, \ \delta, \ \epsilon, \ \zeta, \ \eta, \ \theta, \ \iota, \ \kappa, \ \lambda, \ \mu, \ \nu, \ \xi, \ \pi, \ \rho, \ \sigma, \ \tau, \ \upsilon, \ \phi, \ \chi, \ \psi, \ \omega
+\]
+
+\subsubsection{Letras griegas mayúsculas}
+
+\[
+\Gamma, \ \Delta, \ \Theta, \ \Lambda, \ \Xi, \ \Pi, \ \Sigma, \ \Upsilon, \ \Phi, \ \Psi, \ \Omega
+\]
+
+\subsubsection{Variantes de símbolos griegos}
+
+\[
+\varepsilon, \ \vartheta, \ \varpi, \ \varrho, \ \varsigma, \ \varphi
+\]
+
+%------------------------------------------------
+\subsection{Matrices}
+
+\begin{equation}
+	A = 
+	\begin{bmatrix}
+		1 & 2 \\
+		3 & 4 \\
+	\end{bmatrix}
+\end{equation}
+
+%------------------------------------------------
+\subsection{Sistemas de ecuaciones}
+
+\begin{equation}
+	\begin{cases}
+		x + y = 1 \\
+		2x - y = 3 \\
+	\end{cases}
+\end{equation}
+
+%------------------------------------------------
+\subsection{Ecuaciones numeradas con etiquetas}
+
+\begin{equation}
+	\label{eq:newton}
+	F = ma
+\end{equation}
+
+Como se muestra en la Ecuación~(\ref{eq:newton}), la fuerza es proporcional a la masa y a la aceleración.
+
+%------------------------------------------------
+\subsection{Modelo dinámico de un robot manipulador de 2 GDL}
+
+El modelo dinámico de un robot manipulador de $n$ grados de libertad está dado por la siguiente expresión:
+
+\begin{equation}
+	M(\mathbf{q})\ddot{\mathbf{q}} + C(\mathbf{q}, \dot{\mathbf{q}})\dot{\mathbf{q}} + \mathbf{g}(\mathbf{q}) = \mathbf{\tau}
+\end{equation}
+
+Específicamente, para un robot manipulador de dos grados de libertad se tiene:
+
+\begin{equation}
+	\begin{bmatrix}
+		M_{11}(\mathbf{q}) & M_{12}(\mathbf{q})\\
+		M_{21}(\mathbf{q}) & M_{22}(\mathbf{q})\\
+	\end{bmatrix}\ddot{\mathbf{q}} 
+	+
+	\begin{bmatrix}
+		C_{11}(\mathbf{q}, \dot{\mathbf{q}}) & C_{12}(\mathbf{q}, \dot{\mathbf{q}})\\
+		C_{21}(\mathbf{q}, \dot{\mathbf{q}}) & C_{22}(\mathbf{q}, \dot{\mathbf{q}})\\
+	\end{bmatrix}\dot{\mathbf{q}}
+	+
+	\begin{bmatrix}
+		g_{1}(\mathbf{q})\\
+		g_{2}(\mathbf{q})\\
+	\end{bmatrix}
+	=
+	\mathbf{\tau},
+\end{equation}
+
+Donde:
+
+\begin{equation}
+	\begin{aligned}
+		M_{11}(\mathbf{q}) &= m_{1}l_{c1}^{2} + m_{2}\left[l_{1}^{2} + l_{c2}^{2} + 2l_{1}l_{c2}\cos(q_{2}) \right]  + I_{1} + I_{2}\\
+		M_{12}(\mathbf{q}) &= m_{2}\left[l_{c2}^{2} + l_{1}l_{c2}\cos(q_{2})\right] + I_{2}\\
+		M_{21}(\mathbf{q}) &= m_{2}\left[l_{c2}^{2} + l_{1}l_{c2}\cos(q_{2})\right] + I_{2}\\
+		M_{22}(\mathbf{q}) &= m_{2}l_{c2}^{2} + I_{2}\\
+		\\
+		C_{11}(\mathbf{q}, \dot{\mathbf{q}}) &= -m_{2}l_{1}l_{c2}\sen(q_{2})\dot{q}_{2}\\
+		C_{12}(\mathbf{q}, \dot{\mathbf{q}}) &= -m_{2}l_{1}l_{c2}\sen(q_{2})\left[\dot{q}_{1} +\dot{q}_{2}\right] \\
+		C_{21}(\mathbf{q}, \dot{\mathbf{q}}) &= m_{2}l_{1}l_{c2}\sen(q_{2})\dot{q}_{1}\\
+		C_{22}(\mathbf{q}, \dot{\mathbf{q}}) &= 0\\
+		\\
+		g_{1}(\mathbf{q}) &= \left[m_{1}l_{c1} + m_{2}l_{1}\right]g\sen(q_{1}) + m_{2}l_{c2}g\sen(q_{1}+q_{2}) \\
+		g_{2}(\mathbf{q}) &= m_{2}l_{c2}g\sen(q_{1}+q_{2}).\\
+	\end{aligned}
+\end{equation}
+
+Considerando a $\mathbf{q}=[q_{1}, q_{2}]^{\top}$ y $\dot{\mathbf{q}}=[\dot{q}_{1}, \dot{q}_{2}]^{\top}$ como variables de estado, el modelo dinámico del robot se puede reescribir de la siguiente forma:
+
+\begin{equation}
+	\frac{d}{dt}
+	\begin{bmatrix}
+		\mathbf{q}\\
+		\\
+		\dot{\mathbf{q}}\\
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+		\dot{\mathbf{q}}\\
+		\\
+		M(\mathbf{q})^{-1}\left[\mathbf{\tau} - C(\mathbf{q}, \dot{\mathbf{q}})\dot{\mathbf{q}} - \mathbf{g}(\mathbf{q})\right] 
+	\end{bmatrix}
+\end{equation}
+
+
+%----------------------------------------------------------------------------------------
+%	SECTION 3
+%----------------------------------------------------------------------------------------
+\section{Entornos matemáticos}
+
+\subsection{Teoremas}\index{teoremas}
+
+Este es un ejemplo de teoremas.
+
+\subsubsection{Varias ecuaciones}\index{teoremas!varias ecuaciones}
+Este es un teorema que consta de varias ecuaciones.
+
+\begin{theorem}[Nombre del teorema]
+	En $E=\mathbb{R}^n$ todas las normas son equivalentes. Se tienen las siguientes propiedades:
+	\begin{align}
+		& \abs{\norm{\mathbf{x}} - \norm{\mathbf{y}}} \leq \norm{\mathbf{x}- \mathbf{y}}\\
+		&  \norm{\sum_{i=1}^n\mathbf{x}_i}\leq \sum_{i=1}^n\norm{\mathbf{x}_i}\quad\text{donde $n$ es un entero finito}
+	\end{align}
+\end{theorem}
+
+\subsubsection{Una sola línea}\index{teoremas!una sola línea}
+Este es un teorema que consta de una sola línea.
+
+\begin{theorem}
+	Un conjunto $\mathcal{D}(G)$ es denso en $L^2(G)$, $|\cdot|_0$.
+\end{theorem}
+
+%------------------------------------------------
+
+\subsection{Definiciones}\index{definiciones}
+
+Este es un ejemplo de una definición. Una definición puede ser matemática o puede describir un concepto.
+
+\begin{definition}[Nombre de la definición]
+	Dado un espacio vectorial $E$, una norma sobre $E$ es una aplicación, denotada por $||\cdot||$, de $E$ en $\mathbb{R}^+=[0,+\infty[$ tal que:
+	\begin{align}
+		& \norm{\mathbf{x}}=0\ \Rightarrow\ \mathbf{x}=\mathbf{0}\\
+		& \norm{\lambda \mathbf{x}}=\abs{\lambda}\cdot \norm{\mathbf{x}}\\
+		& \norm{\mathbf{x}+\mathbf{y}}\leq \norm{\mathbf{x}} + \norm{\mathbf{y}}
+	\end{align}
+\end{definition}
+%------------------------------------------------
+
+\subsection{Notación}\index{notación}
+
+\begin{notation}
+	Dado un subconjunto abierto $G$ de $\mathbb{R}^n$, el conjunto de funciones $\varphi$ que:
+	\begin{enumerate}
+		\item Tienen soporte compacto en $G$;
+		\item Son infinitamente diferenciables;
+	\end{enumerate}
+	constituye un espacio vectorial que se denota por $\mathcal{D}(G)$.
+\end{notation}
+
+%------------------------------------------------
+
+\subsection{Observaciones}\index{observaciones}
+
+Este es un ejemplo de una observación.
+
+\begin{remark}
+	Los conceptos presentados aquí son de uso convencional en matemáticas. Los espacios vectoriales se consideran sobre el cuerpo $\mathbb{K}=\mathbb{R}$; sin embargo, las propiedades establecidas se extienden fácilmente a $\mathbb{K}=\mathbb{C}$.
+\end{remark}
+
+%------------------------------------------------
+
+\subsection{Corolarios}\index{corolarios}
+
+Este es un ejemplo de un corolario.
+
+\begin{corollary}[Nombre del corolario]
+	Los conceptos presentados aquí son de uso convencional en matemáticas. Los espacios vectoriales se consideran sobre el cuerpo $\mathbb{K}=\mathbb{R}$; sin embargo, las propiedades establecidas se extienden fácilmente a $\mathbb{K}=\mathbb{C}$.
+\end{corollary}
+
+%------------------------------------------------
+
+\subsection{Proposiciones}\index{proposiciones}
+
+Este es un ejemplo de proposiciones.
+
+\subsubsection{Varias ecuaciones}\index{proposiciones!varias ecuaciones}
+
+\begin{proposition}[Nombre de la proposición]
+	Se tienen las siguientes propiedades:
+	\begin{align}
+		& \abs{\norm{\mathbf{x}} - \norm{\mathbf{y}}} \leq \norm{ \mathbf{x}- \mathbf{y}}\\
+		&  \norm{\sum_{i=1}^n\mathbf{x}_i} \leq \sum_{i=1}^n\norm{\mathbf{x}_i}\quad\text{donde $n$ es un entero finito}
+	\end{align}
+\end{proposition}
+
+\subsubsection{Una sola línea}\index{proposiciones!una sola línea}
+
+\begin{proposition} 
+	Sean $f,g\in L^2(G)$; si $\forall \varphi\in\mathcal{D}(G)$ se cumple que $(f,\varphi)_0=(g,\varphi)_0$, entonces $f = g$. 
+\end{proposition}
+
+%------------------------------------------------
+
+\subsection{Ejemplos}\index{ejemplos}
+
+Este es un ejemplo de ejemplos.
+
+\subsubsection{Ecuación y texto}\index{ejemplos!ecuación y texto}
+
+\begin{example}
+	Sea $G=\{x\in\mathbb{R}^2:\abs{x}<3\}$ y sea $x^0=(1,1)$; considérese la función:
+	\begin{equation}
+		f(x)=\left\{\begin{aligned} 
+			& \mathrm{e}^{\abs{x}} & & \text{si $\abs{x-x^0}\leq 1/2$}\\
+			& 0 & & \text{si $\abs{x-x^0}> 1/2$}
+		\end{aligned}\right.
+	\end{equation}
+	La función $f$ tiene soporte compacto; se puede tomar $A=\{x\in\mathbb{R}^2:\abs{x-x^0}\leq 1/2+\epsilon\}$ para todo $\epsilon\in\intoo{0}{5/2-\sqrt{2}}$.
+\end{example}
+
+\subsubsection{Párrafo de texto}\index{ejemplos!párrafo de texto}
+
+\begin{example}[Nombre del ejemplo]
+	\lipsum[2]
+\end{example}
+
+%------------------------------------------------
+
+
+\subsection{Ejercicios}\index{ejercicios}
+
+Este es un ejemplo de un ejercicio.
+
+\begin{exercise}
+	Este es un buen lugar para plantear una pregunta que permita evaluar el progreso del aprendizaje o reforzar las ideas en la mente de los estudiantes.
+\end{exercise}
+
+%------------------------------------------------
+
+\subsection{Soluciones}\index{soluciones}
+
+Este es un ejemplo de una solución.
+
+\begin{solution}
+	Los detalles se dejan al lector.
+\end{solution}
+
+
+
+%------------------------------------------------
+
+\subsection{Problemas}\index{problemas}
+
+\begin{problem}
+	¿Cuál es la velocidad media de vuelo de una golondrina sin carga?
+\end{problem}
+
+%------------------------------------------------
+
+\subsection{Vocabulario}\index{vocabulario}
+
+Defina una palabra para mejorar el vocabulario de los estudiantes.
+
+\begin{vocabulary}[Palabra]
+	Definición de la palabra.
+\end{vocabulary}
+
+
+
+%----------------------------------------------------------------------------------------
+%	SECTION 4
+%----------------------------------------------------------------------------------------
+\section{Figuras y tablas}
+
+
+\subsection{Figuras}\index{figuras}
+Los formatos compatibles incluyen: `.png', `.jpg', `.jpeg', `.pdf' y `.eps' (dependiendo del compilador). Se recomienda utilizar `.pdf' para imágenes vectoriales y `.png' para gráficos rasterizados.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\linewidth]{image}
+	\caption{Ejemplo de figura con su descripción.}
+	\label{fig:sample_figure}
+\end{figure}
+
+Consulte la Figura~\ref{fig:sample_figure} para referirse a una figura completa en el texto.
+
+
+\begin{figure}[H]
+	\centering
+	\subfloat[Imagen izquierda\label{fig:left_img}]{
+		\includegraphics[width=0.3\linewidth]{a}
+	}
+	\quad
+	\subfloat[Imagen derecha\label{fig:right_img}]{
+		\includegraphics[width=0.3\linewidth]{b}
+	}
+	
+	\caption{Dos imágenes mostradas una al lado de la otra.}
+	\label{fig:side_by_side}
+\end{figure}
+
+Consulte las subfiguras de manera individual como Figuras~\ref{fig:left_img} y~\ref{fig:right_img}, o de forma conjunta como la Figura~\ref{fig:side_by_side}.
+
+
+\begin{figure}[H]
+	\centering
+	\subfloat[Imagen 1\label{fig:image1}]{
+		\includegraphics[width=0.3\linewidth]{a}
+	}
+	\quad
+	\subfloat[Imagen 2\label{fig:image2}]{
+		\includegraphics[width=0.3\linewidth]{b}
+	}
+	
+	\qquad
+	
+	\subfloat[Imagen 3\label{fig:image3}]{
+		\includegraphics[width=0.3\linewidth]{c}
+	}
+	\quad
+	\subfloat[Imagen 4\label{fig:image4}]{
+		\includegraphics[width=0.3\linewidth]{d}
+	}
+	
+	\caption{Comparación de cuatro imágenes diferentes.}
+	\label{fig:four_images}
+\end{figure}
+
+Puede hacer referencia a las subfiguras de forma individual, como en la Figura~\ref{fig:image2}, o al conjunto completo utilizando la Figura~\ref{fig:four_images}.
+
+
+%------------------------------------------------
+
+\subsection{Tablas}\index{tablas}
+
+\begin{table}[H]
+	\centering
+	\caption{Resultados experimentales para cada tratamiento.}
+	\begin{tabular}{c S[table-format=1.7] S[table-format=1.3]}
+		\toprule
+		\textbf{Tratamiento} & {\textbf{Respuesta 1}} & {\textbf{Respuesta 2}} \\
+		\midrule
+		Tratamiento 1 & 0.0003262 & 0.562 \\
+		Tratamiento 2 & 0.0015681 & 0.910 \\
+		Tratamiento 3 & 0.0009271 & 0.296 \\
+		\bottomrule
+	\end{tabular}
+	\label{tab:treatment_responses}
+\end{table}
+
+\begin{table}[H]
+	\caption{Parámetros de muestra con sus unidades físicas correspondientes.}
+	\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} c l S[table-format=2.2] l }
+		\toprule
+		\textbf{Símbolo} & \textbf{Descripción} & \textbf{Valor} & \textbf{Unidades} \\
+		\midrule
+		$A$ & Parámetro de muestra A & 12.50 & \si{\meter} \\
+		$B$ & Parámetro de muestra B & 3.14 & \si{\kilogram} \\
+		$C$ & Parámetro de muestra C & -0.98 & \si{\second} \\
+		\bottomrule
+	\end{tabular*}
+	\label{tab:sample_parameters}
+\end{table}
+
+Este es un ejemplo de cómo referenciar una tabla utilizando su etiqueta asignada. Como se muestra en la Tabla~\ref{tab:sample_parameters}.
+
+
+%----------------------------------------------------------------------------------------
+%	SECTION 5
+%----------------------------------------------------------------------------------------
+\section{Miscelánea}
+\subsection{Cuadros}\index{cajas}
+
+\alertinfo{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
+}
+
+\alertsuccess{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.}
+
+\alertwarning{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.}
+
+\alerterror{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.}
+
+
+
+%------------------------------------------------
+\subsection{Terminal de Linux}\index{terminal}
+
+Estilo bash en línea \verb|C:\Windows\system32|
+
+Entorno estilo bash.
+
+\begin{Verbatim}
+	$ locale  # verificar UTF-8
+	
+	$ sudo apt update && sudo apt install locales
+	$ sudo locale-gen en_US en_US.UTF-8
+	$ sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+	$ export LANG=en_US.UTF-8
+	
+	$ curl -L -o /tmp/ros2-apt-source.deb "https://github.com/ros-infrastructure/ros-apt-source/releases/download/${ROS_APT_SOURCE_VERSION}/ros2-apt-source_${ROS_APT_SOURCE_VERSION}.$(. /etc/os-release && echo ${UBUNTU_CODENAME:-${VERSION_CODENAME}})_all.deb"
+	
+	$ ~/home/python/
+	$ 'a' "b"
+\end{Verbatim}
+
+
+\newpage
+%------------------------------------------------
+\subsection{Códigos de MATLAB}\index{matlab}
+
+\matlabcode{code/matlab/PVTOLmodel.m}{Modelo PVTOL}
+
+\newpage
+\matlabcode{code/matlab/PVTOLcontrol.m}{Control de $z$ y $x$ con $\atan$}

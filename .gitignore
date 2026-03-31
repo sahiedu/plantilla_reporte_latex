@@ -1,0 +1,37 @@
+# Auxiliares LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.lol
+*.ptc
+
+# Bibliografía
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+
+# Sincronización
+*.synctex.gz
+
+# Índices
+*.idx
+*.ilg
+*.ind
+*.ist
+
+# Listings
+*.listing
+
+# Latexmk
+*.fls
+*.fdb_latexmk
+latexmkrc
+
+# Temporales
+*~
+*.gz
+
